@@ -14,17 +14,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: false
+          token: ${{ secrets.GITHUB_TOKEN }}  # This is important!
           
       - name: Generate Pacman graph
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
           
+      - name: Move files to root directory
+        run: |
+          mv dist/pacman-contribution-graph.svg .
+          mv dist/pacman-contribution-graph-dark.svg .
+          
       - name: Commit and push if changed
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || git commit -m "Update Pacman graph"
+          git add pacman-contribution-graph.svg pacman-contribution-graph-dark.svg
+          git diff --staged --quiet || git commit -m "Update Pacman graph"
           git push
