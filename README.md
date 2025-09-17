@@ -44,9 +44,9 @@
 ###
 
 <picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/csgoat0/csgoat0/output/pacman-contribution-graph-dark.svg">
- <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/csgoat0/csgoat0/output/pacman-contribution-graph.svg">
- <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/csgoat0/csgoat0/output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/pacman-contribution-graph.svg">
+  <img alt="Pac-Man eating my contributions" src="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/pacman-contribution-graph.svg">
 </picture>
 
 ###
