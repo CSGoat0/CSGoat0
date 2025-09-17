@@ -48,5 +48,4 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/pacman-contribution-graph.svg">
   <img alt="Pac-Man eating my contributions" src="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/pacman-contribution-graph.svg">
 </picture>
-
 ###
