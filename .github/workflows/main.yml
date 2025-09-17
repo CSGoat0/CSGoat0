@@ -10,11 +10,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # This is crucial!
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # This is important!
+          token: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Generate Pacman graph
         uses: abozanona/pacman-contribution-graph@main
