@@ -47,7 +47,7 @@
   <img src="https://github-profile-trophy.vercel.app?username=csgoat0&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4" height="150" alt="trophy graph"  />
   </div>
 
-### Pokemon Animation with Dark Mode
+###
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/pacman-contribution-graph-dark.svg">
@@ -57,7 +57,6 @@
 
 ###
 
-### Snake Animation with Dark Mode
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/dist/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/dist/github-contribution-grid-snake.svg">
