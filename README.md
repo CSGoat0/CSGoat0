@@ -28,8 +28,6 @@
   <img src="https://skillicons.dev/icons?i=github" height="60" alt="github logo"  />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=npm" height="60" alt="npm logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=nuget" height="60" alt="nuget logo"  />
 </div>
 
 ###
@@ -47,10 +45,19 @@
   <img src="https://github-profile-trophy.vercel.app?username=csgoat0&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4" height="150" alt="trophy graph"  />
   </div>
 
-###
+### Pokemon Animation with Dark Mode
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/pacman-contribution-graph.svg">
   <img alt="Pac-Man eating my contributions" src="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/pacman-contribution-graph.svg">
+</picture>
+
+###
+
+### Snake Animation with Dark Mode
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/dist/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/dist/github-contribution-grid-snake.svg">
+  <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/dist/github-contribution-grid-snake.svg">
 </picture>
