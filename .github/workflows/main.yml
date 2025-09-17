@@ -30,6 +30,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -A
           git diff --staged --quiet || git commit -m "Update Pacman graph"
+          git pull --rebase origin main  # Add this line
           git push
 
   snake:
@@ -56,4 +57,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -A
           git diff --staged --quiet || git commit -m "Update Snake animation"
+          git pull --rebase origin main  # Add this line
           git push
