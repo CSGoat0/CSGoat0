@@ -1,18 +1,18 @@
-name: Generate Pac-Man Contribution Graph
+name: Generate Animations
 on:
   schedule:
-    - cron: "0 0 * * *"  # Runs daily at midnight UTC
-  workflow_dispatch:      # Allows manual triggering
+    - cron: "0 0 * * *"  # Runs daily at midnight (Pacman)
+    - cron: "0 */6 * * *" # Runs every 6 hours (Snake)
+  workflow_dispatch:
   push:
     branches:
       - main
 
 jobs:
-  build:
+  pacman:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # This is crucial!
-    
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -24,15 +24,35 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           
-      - name: Move files to root directory
-        run: |
-          mv dist/pacman-contribution-graph.svg .
-          mv dist/pacman-contribution-graph-dark.svg .
-          
-      - name: Commit and push if changed
+      - name: Commit and push Pacman
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add pacman-contribution-graph.svg pacman-contribution-graph-dark.svg
+          git add -A
           git diff --staged --quiet || git commit -m "Update Pacman graph"
+          git push
+
+  snake:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Generate Snake animation
+        uses: Platane/snk@master
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          gif_out_path: dist/github-contribution-grid-snake.gif
+          svg_out_path: dist/github-contribution-grid-snake.svg
+          
+      - name: Commit and push Snake
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --staged --quiet || git commit -m "Update Snake animation"
           git push
