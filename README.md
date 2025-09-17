@@ -54,11 +54,3 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/pacman-contribution-graph.svg">
   <img alt="Pac-Man eating my contributions" src="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/pacman-contribution-graph.svg">
 </picture>
-
-###
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/dist/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/dist/github-contribution-grid-snake.svg">
-  <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/CSGoat0/CSGoat0/main/dist/github-contribution-grid-snake.svg">
-</picture>
